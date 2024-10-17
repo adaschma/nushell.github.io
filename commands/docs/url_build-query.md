@@ -44,3 +44,9 @@ Outputs a query string representing the contents of this record
 > {a:"AT&T", b: "AT T"} | url build-query
 a=AT%26T&b=AT+T
 ```
+
+Outputs a query string representing the contents of this record
+```nu
+> {a: ["one", "two"], b: "three"} | url build-query
+a=one&a=two&b=three
+```
